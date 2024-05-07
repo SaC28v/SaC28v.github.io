@@ -1,0 +1,102 @@
+hr{
+    border: 1px black solid;
+ }
+ 
+ p,a{
+    font-family: sans-serif;
+    color: black;
+    text-decoration: none;
+ }
+ 
+ body{
+    margin: 0;
+    padding: 0;
+    background: rgb(255,118,10);
+    background: linear-gradient(0deg, rgba(255,118,10,0.8) 28%, rgba(255,255,255,1) 69%);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  } 
+
+/* ----------------------------------------------------- */
+  .HeaderContainer {
+    font-family:sans-serif;
+    font-size: 25px;
+    font-weight:900;
+    color: black;
+    padding: 20px 0;
+    display: flex; 
+    justify-content: center;
+    
+  }
+  
+  .Header {
+     width: 1200px;
+     display: flex; 
+     justify-content: space-between; 
+     align-items: center;
+  }
+ 
+  .logo{
+    margin-left: 10px;
+    max-width: 100%;
+    height: auto;
+ }
+
+ /* ----------------------------------------------------- */
+ .LinksContainer {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+  }
+  
+       .menu{
+          max-width: 100%;
+          height: auto;
+       }
+ 
+ /* ----------------------------------------------------- */
+ .BotonContainer{
+   font-family: sans-serif;
+   font-size: 24px;
+   font-weight: bolder;
+   text-align: center;
+   color: black;
+ }
+.Boton{
+    color:black;
+    background-color: #ffffff15;
+    font-weight: bold;
+    padding:10px; 
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 50px;
+    width: 250px;
+    margin: 20px auto;
+    margin-top: 50px;
+
+}
+
+.Decoracion{
+    display: flex;
+    align-items: flex-end;
+    justify-content: right;
+    
+}
+/* ----------------------------------------------------- */
+.Copyright {
+    font-size: 16px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+
+/* ----------------------------------------------------- */
+  @media (max-width: 768px) {
+    .Decoracion img{
+       width: 200px;
+       margin-top: 210px;
+ 
+    }
+    
+ }

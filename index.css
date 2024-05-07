@@ -1,0 +1,30 @@
+body, html {
+    margin: 0;
+    overflow: hidden;
+    background-image: url("SRC/Portada.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+
+.StartScreen {
+    display: block;
+    width: 200px;
+    height: 100px;
+    text-align: center;
+    height: 500px;
+}
+.StartScreen a {
+    display: block;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin-top: 150px;
+}
+
+
+
+
+
