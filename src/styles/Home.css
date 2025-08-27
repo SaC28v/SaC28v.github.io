@@ -1,0 +1,63 @@
+.hero {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+  color: var(--text);
+}
+
+/* Header */
+.hero-header {
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  z-index: 10;
+}
+.brand { display: flex; flex-direction: column; font-size: 14px; }
+.brand strong { font-weight: 700; }
+.btn-contact {
+  background: var(--text); color: var(--bg);
+  padding: 8px 20px; border-radius: 20px;
+  text-decoration: none; font-size: 14px;
+}
+
+/* Fondo */
+.hero-bg {
+  position: absolute; inset: 0;
+  background-size: cover; background-position: center;
+  z-index: 0;
+}
+
+/* Contenido */
+.hero-content {
+  position: relative; text-align: center;
+  z-index: 5; padding-top: 120px;
+}
+.hero-title {
+  font-size: clamp(40px, 10vw, 120px);
+  font-weight: 900; line-height: 0.9; margin: 0;
+}
+.hero-photo { display: flex; justify-content: center; margin-top: -50px; }
+.hero-photo img { width: min(300px, 80%); height: auto; z-index: 6; }
+
+/* Gradiente */
+.hero-fade {
+  position: absolute; bottom: 0; left: 0; right: 0;
+  height: 150px;
+  background: linear-gradient(to bottom, transparent, #fff);
+  z-index: 7;
+}
+[data-theme="dark"] .hero-fade {
+  background: linear-gradient(to bottom, transparent, #0f1115);
+}
+
+/* Logo button */
+.logo-button {
+  border: none; background: transparent; cursor: pointer;
+  padding: 6px; border-radius: 12px;
+  transition: transform .2s ease;
+}
+.logo-button:active { transform: scale(0.95); }
+.logo-img { width: 36px; height: 36px; }
